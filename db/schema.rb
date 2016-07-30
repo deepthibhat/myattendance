@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160729204321) do
+ActiveRecord::Schema.define(version: 20160730074242) do
 
   create_table "attendances", force: :cascade do |t|
     t.text     "today"
@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(version: 20160729204321) do
     t.string   "email"
     t.string   "gender"
     t.string   "phone_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end
